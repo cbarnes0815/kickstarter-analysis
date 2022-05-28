@@ -25,3 +25,7 @@ Another challenge I faced was correctly displaying desired rows and column in th
 
 
 ### Analysis of Outcomes Based on Goals
+
+I performed the Outcomes based on goals analysis by creating a new table (Shown Below). This table is pulling information from the KickStarter Dataset to display the number of successful, failed, and canceled projects that fall within a certain fundraising "Goal" range for the subcategory "plays" only. This was done successful by entering a countifs statement and inputing the desired filters for each column.  The numbers are then converted into percentages of each category. 
+
+![Play Outcomes Based Goals Table](Outcomes_Based_Goals_Table.png)
