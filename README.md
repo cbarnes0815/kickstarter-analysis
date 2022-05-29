@@ -29,3 +29,29 @@ Another challenge I faced was correctly displaying desired rows and column in th
 I performed the Outcomes based on goals analysis by creating a new table (Shown Below). This table is pulling information from the KickStarter Dataset to display the number of successful, failed, and canceled projects that fall within a certain fundraising "Goal" range for the subcategory "plays" only. This was done successful by entering a countifs statement and inputing the desired filters for each column.  The numbers are then converted into percentages of each category. 
 
 ![Play Outcomes Based Goals Table](Outcomes_Based_Goals_Table.png)
+
+From this table a line chart was created to display the trend between of the percentages of successful, failed, and cancelled plays that are between a certain range of fundraising goals. The chart is displayed below.
+
+![Outcomes Based on Goal](Outcomes_vs_Goals.png)
+
+### Challenges
+
+Once challenge that I had to overcome was creating the equations for the **Number Successful**, **Number Failed**, and **Number Canceled** columns. After learning how to input the **countifs()** statement correctly I attempted to copy the formula through to the next 2 columns. When pasted over the results read 0 and I realized my problem stemmed from not fixing the columns used in my formula that I pulled from the **Kickstarter sheet**. I fixed this by going back to **Number Successful** column and adding "**$**" signs to all used columns and then dragging the formulas over.  
+
+## Results
+
+**- What are two conclusions you can draw about the Outcomes based on Launch Date?**
+
+Two conclusions that I can draw from the Outcomes based on Launch Date is if you would like to be successful in the theater category it is best to launch a campaign in the months of May and June. May has an average success rate of 66% out of the total shows that month and June has an average of 65% success rate of total shows that month. On the other end of the spectrum the worst time to launch a fundraising campaign is in October. This month has a low success rate and a high fail rate relative to the total shows in the month. The data reads that there is a 43% Fail rate and a 56% success rate, meaning half the campaigns launched that month were a success.  
+
+**- What can you conclude about the Outcomes based on Goals?**
+
+From the data analysis of outcomes based on goals I can conclude that projects that most projects has a goal of 1000 to 5000 dollars and 73% of those goals are successful. Goals with less than $1000 are also relatively successful with a 76% rate. Further reading the data, the higher you goal the more likely you are to fail at completely your goal. Although, when you look at a the financial goal of 35,000 - about 45,000 it only has a 1:3 fail to success ratio; Although there are only 9 projects that have attempted this goal. In total, that would put a 66% chance your goal would be successful. 
+
+**- What are some limitations of this dataset?**
+The limitations to this dataset is that it is only looking at theaters and plays, which is a limited amount of information, to determine how she when she she should start campaigns any how high she should set her goal. Although this is vital information there are other factors that plays a part in determining if Louise could be successful in her campaign by looking at where her play is going to be produced, what is the genre of her play and how long she plans to campaign. 
+
+
+**- What are some other possible tables and/or graphs that we could create?**
+
+You could use bar graphs to display the information from both sheets. You could display the number of successful, failed, or canceled projects or you could display the percentages of each category. I feel the bar graph would clearly convey the exact number of the projects in relation to Number Successful, failed, or canceled.  The same could be done for the theater outcomes based on Launch date. And instead of a pivot table being used to create information a table could have also been created and functions could be called to import data. 
